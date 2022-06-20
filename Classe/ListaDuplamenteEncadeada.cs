@@ -5,6 +5,8 @@ namespace Classe
         public no? cabeca;
         public no? cauda;
         public int qtdElementos;
+        
+        // construtor da lista duplamente encadeada
         public lista()
         {
             this.cabeca?.setProx(null);
@@ -15,26 +17,27 @@ namespace Classe
         }
         public void Retirar(int pos)
         {
+            // só irá retirar algo da lista, se ela tiver algo.
             if (this.qtdElementos > 0)
             {
-                no posAnterior;
+                no? posAnterior;
                 //comecar pela cabeca
                 if ((this.qtdElementos / 2) > pos)
                 {
-                    no posAtual = this.Buscar(pos);
-                    no posProximo = posAtual.getProx();
-                    posAnterior = posAtual.getAnterior();
-                    posAnterior.setProx(posProximo);
-                    posProximo.setAnterior(posAnterior);
+                    no? posAtual = this.Buscar(pos);
+                    no? posProximo = posAtual?.getProx();
+                    posAnterior = posAtual?.getAnterior();
+                    posAnterior?.setProx(posProximo);
+                    posProximo?.setAnterior(posAnterior);
                 }
                 //comecar pela cauda
                 else
                 {
-                    no posAtual = this.Buscar(pos);
-                    no posProximo = posAtual.getProx();
-                    posAnterior = posAtual.getAnterior();
-                    posAnterior.setProx(posProximo);
-                    posProximo.setAnterior(posAnterior);
+                    no? posAtual = this.Buscar(pos);
+                    no? posProximo = posAtual?.getProx();
+                    posAnterior = posAtual?.getAnterior();
+                    posAnterior?.setProx(posProximo);
+                    posProximo?.setAnterior(posAnterior);
                 }
                 this.qtdElementos--;
             }
@@ -75,11 +78,11 @@ namespace Classe
             
             return buscar;
         }
-        public no getFirst()
+        public no? getFirst()
         {
             return this.cabeca;
         }
-        public no getLast()
+        public no? getLast()
         {
             return this.cauda;
         }
@@ -112,19 +115,23 @@ namespace Classe
 
     class no
     {
+        // atributos da classe nó
         private string? informacao;
         private no? anterior;
         private no? prox;
         private int posicao;
+        
+        // getters & setters da classe nó
         public int getPosicao() { return this.posicao;}
         public void setPosicao(int p) { this.posicao = p; }
-        public no getAnterior() { return this.anterior;}
+        public no? getAnterior() { return this.anterior;}
         public void setAnterior(no? a) { this.anterior = a; }
-        public no getProx() { return this.prox; }
+        public no? getProx() { return this.prox; }
         public void setProx(no? p) { this.prox = p; }
-        public string getInformacao() { return this.informacao; }
+        public string? getInformacao() { return this.informacao; }
         public void setInformacao(string i) { this.informacao = i; }
 
+        // Construtor da classe de nó, onde terá a informacao do nó, e a posição atual deste nó na lista
         public no (string informacao, int posicao)
         {
             this.informacao = informacao;

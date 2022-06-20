@@ -60,11 +60,11 @@ namespace Classe
             
             return buscar;
         }
-        public no getFirst()
+        public no? getFirst()
         {
             return this.cabeca;
         }
-        public no getLast()
+        public no? getLast()
         {
             return this.cauda;
         }

@@ -15,13 +15,14 @@ namespace Classe
         }
         public void Retirar()
         {
+            // só irá remover se possuir algo dentro da Fila.
             if (this.qtdElementos > 0)
             {
-                no? cabecaNova = this.cabeca?.getAnterior();
-                this.cabeca?.setAnterior(null);
-                cabecaNova?.setProx(null);
-                this.cabeca = cabecaNova;
-                this.qtdElementos--;
+                no? cabecaNova = this.cabeca?.getAnterior(); //Pega o anterior da cabeça
+                this.cabeca?.setAnterior(null); //Seta o anterior do atual 'cabeça' como nulo, para nao conseguir acessar ele
+                cabecaNova?.setProx(null); //Seta o proximo da atual cabeça como nulo também, para perder referencia e nao conseguir ir para este antigo cabeça
+                this.cabeca = cabecaNova; //Seta a nova cabeça
+                this.qtdElementos--; //remove o total de elementos em 1
             }
         }
         public no? Buscar(int pos)
@@ -60,11 +61,11 @@ namespace Classe
             
             return buscar;
         }
-        public no getFirst()
+        public no? getFirst()
         {
             return this.cabeca;
         }
-        public no getLast()
+        public no? getLast()
         {
             return this.cauda;
         }
