@@ -1,0 +1,15 @@
+C:\Faculdade\lista-exercicios\bin\Debug\net6.0\lista-exercicios.exe
+C:\Faculdade\lista-exercicios\bin\Debug\net6.0\lista-exercicios.deps.json
+C:\Faculdade\lista-exercicios\bin\Debug\net6.0\lista-exercicios.runtimeconfig.json
+C:\Faculdade\lista-exercicios\bin\Debug\net6.0\lista-exercicios.dll
+C:\Faculdade\lista-exercicios\bin\Debug\net6.0\lista-exercicios.pdb
+C:\Faculdade\lista-exercicios\obj\Debug\net6.0\lista-exercicios.csproj.AssemblyReference.cache
+C:\Faculdade\lista-exercicios\obj\Debug\net6.0\lista-exercicios.GeneratedMSBuildEditorConfig.editorconfig
+C:\Faculdade\lista-exercicios\obj\Debug\net6.0\lista-exercicios.AssemblyInfoInputs.cache
+C:\Faculdade\lista-exercicios\obj\Debug\net6.0\lista-exercicios.AssemblyInfo.cs
+C:\Faculdade\lista-exercicios\obj\Debug\net6.0\lista-exercicios.csproj.CoreCompileInputs.cache
+C:\Faculdade\lista-exercicios\obj\Debug\net6.0\lista-exercicios.dll
+C:\Faculdade\lista-exercicios\obj\Debug\net6.0\refint\lista-exercicios.dll
+C:\Faculdade\lista-exercicios\obj\Debug\net6.0\lista-exercicios.pdb
+C:\Faculdade\lista-exercicios\obj\Debug\net6.0\lista-exercicios.genruntimeconfig.cache
+C:\Faculdade\lista-exercicios\obj\Debug\net6.0\ref\lista-exercicios.dll
